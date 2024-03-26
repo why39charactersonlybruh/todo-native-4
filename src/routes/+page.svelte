@@ -40,7 +40,7 @@
 
 </script>
 
-<h1>My Todo App!</h1>
+<h1>To Do:</h1>
 
 <form on:submit|preventDefault={addToArray}>
 	<input type="text" bind:value={todoItem}>
@@ -76,3 +76,4 @@
 	}
 </style>
 
+button
