@@ -1,8 +1,24 @@
 <script>
 	import '../style.css';
+	import { writable } from 'svelte/store';
 	let todoItem = '';
-	let todoList = [];
+	let storedList;
+	let todoList = writable([]);
 
+	if (typeof window != 'undefined' && typeof localStorage !== 'undefined') {
+		storedList = localStorage.getItem('storedList');
+		if(storedList) {
+			$todoList = (JSON.parse(storedList));
+		}
+	}
+
+	function updateList() {
+		return storedList = localStorage.setItem('storedList', JSON.stringify
+		($todoList));
+	}
+	
+	
+	$: isDone = todoList.filter(item => item.done);
 	function addToArray() {
 		if (todoItem == '') {
 			return;
@@ -14,10 +30,12 @@
 		todoList = todoList;
 		console.log(todoList);
 		todoItem = '';
+		updateList();
 	}
 	function removeThis(index) {
 		todoList.splice(index, 1);
 		todoList = todoList;
+		updateList();
 	}
 
 </script>
@@ -30,7 +48,7 @@
 </form>
 
 <ul>
-	{#each todoList as item, index}
+	{#each $todoList as item, index}
 		<li>
 			<input type="checkbox" bind:checked={item.done}>
 			<span class:done={item.done} >{item.text}</span>
