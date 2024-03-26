@@ -18,23 +18,23 @@
 	}
 	
 	
-	$: isDone = todoList.filter(item => item.done);
+	$: isDone = $todoList.filter(item => item.done);
 	function addToArray() {
 		if (todoItem == '') {
 			return;
 		}
-		todoList = [...todoList, {
+		$todoList = [...$todoList, {
 			text: todoItem,
 			done: false
 		}];
-		todoList = todoList;
-		console.log(todoList);
+		$todoList = $todoList;
+		console.log($todoList);
 		todoItem = '';
 		updateList();
 	}
 	function removeThis(index) {
-		todoList.splice(index, 1);
-		todoList = todoList;
+		$todoList.splice(index, 1);
+		$todoList = $todoList;
 		updateList();
 	}
 
