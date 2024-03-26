@@ -44,7 +44,7 @@
 
 <form on:submit|preventDefault={addToArray}>
 	<input type="text" bind:value={todoItem}>
-	<button type="submit">Add</button>
+	<button type="submit" class="glow-on-hover">Add</button>
 </form>
 
 <ul>
@@ -75,5 +75,3 @@
 
 	}
 </style>
-
-button
