@@ -13,7 +13,12 @@ body img {
     width: 20%;
     padding-top: 10em;
     border-radius: 50%;
-    animation: fadeIn 3s;
+    animation: fadeIn 10s;
+}
+
+input[type="text"]{
+        padding: 10px 10px;
+        font-size: large;
 }
 
 .header {
@@ -33,8 +38,8 @@ body img {
   }
   
 .glow-on-hover {
-     width: 65px;
-     height: 40px;
+     width: 70px;
+     height: 45px;
      border: none;
      outline: none;
      color: #fff;
