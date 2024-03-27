@@ -9,6 +9,12 @@ button{
      font-size: large;
 }
 
+body img {
+    width: 20%;
+    padding-top: 10em;
+    border-radius: 20em;
+}
+
 .header {
     padding: 20px;
     text-align: center;
