@@ -6,14 +6,32 @@ body {
      
 }
 button{
-     color: wheat;
-     background-color: black;
-     font-size: larger;
-     border: 7px solid black; 
+     font-size: large;
 }
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    color: white;
+    font-size: 30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+  }
+  .header h1 {
+    animation: fadeIn 3s;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
 .glow-on-hover {
-     width: 200px;
-     height: 50px;
+     width: 65px;
+     height: 40px;
      border: none;
      outline: none;
      color: #fff;
