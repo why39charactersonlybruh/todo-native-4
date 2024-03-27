@@ -12,12 +12,11 @@ button{
 body img {
     width: 20%;
     padding-top: 10em;
-    border-radius: 50%;
-    animation: fadeIn 10s;
+    border-radius: 100%;
 }
 
 input[type="text"]{
-        padding: 10px 10px;
+        padding: 9px 10px;
         font-size: large;
 }
 
@@ -64,7 +63,7 @@ input[type="text"]{
      animation: glowing 20s linear infinite;
      opacity: 0;
      transition: opacity .3s ease-in-out;
-     border-radius: 10px;
+     border-radius: 20px;
  }
  
  .glow-on-hover:active {
