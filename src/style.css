@@ -1,8 +1,8 @@
 body {
      background-color: cornsilk;
      text-align: center;
-     padding-top: 4em;
      font-size: x-large;
+     margin: 0;
      
 }
 button{
@@ -15,9 +15,6 @@ button{
     background: #000;
     color: white;
     font-size: 30px;
-    left: 0;
-    right: 0;
-    top: 0;
     margin: 0;
   }
   .header h1 {
