@@ -12,7 +12,8 @@ button{
 body img {
     width: 20%;
     padding-top: 10em;
-    border-radius: 20em;
+    border-radius: 50%;
+    animation: fadeIn 3s;
 }
 
 .header {
@@ -20,8 +21,7 @@ body img {
     text-align: center;
     background: #000;
     color: white;
-    font-size: 30px;
-    margin: 0;
+    font-size: 40px;
   }
   .header h1 {
     animation: fadeIn 3s;
