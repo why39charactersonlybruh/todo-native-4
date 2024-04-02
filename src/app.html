@@ -10,6 +10,17 @@
 	<div class="header">
 		<h1>Keeping Track.</h1>
 	   </div>
+	   <h2>Toggle Dark/Light Mode</h2>
+	   <p>Click the button to toggle between dark and light mode for this page.</p>
+
+	   <button onclick="myFunction()">Toggle dark mode</button>
+
+   <script>
+	   function myFunction() {
+		 var element = document.body;
+		 element.classList.toggle("dark-mode");
+	   }
+   </script>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 		<div class="container">
@@ -17,17 +28,6 @@
 			  <img src="%sveltekit.assets%/ba.JPG" class="img" alt="">
 			</div>
 		   </div>
-		   <h2>Toggle Dark/Light Mode</h2>
-			<p>Click the button to toggle between dark and light mode for this page.</p>
-
-			<button onclick="myFunction()">Toggle dark mode</button>
-
-		<script>
-			function myFunction() {
-   			var element = document.body;
-   			element.classList.toggle("dark-mode");
-			}
-		</script>
 	</body>
 </html>
 
