@@ -10,16 +10,16 @@
 	<div class="header">
 		<h1>Keeping Track.</h1>
 	   </div>
-		
+		<div class="clickbutton">
 	   <button onclick="myFunction()">Toggle dark mode</button>
-
+		</div>
    <script>
 	   function myFunction() {
 		 var element = document.body;
 		 element.classList.toggle("dark-mode");
 	   }
    </script>
-   
+
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 		<div class="container">
