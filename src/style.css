@@ -99,4 +99,5 @@ input[type="text"]{
  .dark-mode {
     background-color: black;
     color: white;
+    padding-bottom: 4in;
   }
