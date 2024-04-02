@@ -95,3 +95,8 @@ input[type="text"]{
      50% { background-position: 400% 0; }
      100% { background-position: 0 0; }
  }
+
+ .dark-mode {
+    background-color: black;
+    color: white;
+  }
