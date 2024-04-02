@@ -97,7 +97,7 @@ input[type="text"]{
  }
 
  .dark-mode {
-    background-color: black;
+    background-color: #111;
     color: white;
     padding-bottom: 4in;
   }
