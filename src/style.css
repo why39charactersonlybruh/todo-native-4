@@ -9,13 +9,7 @@ button{
      font-size: large;
      background-color: #fff;
      cursor: pointer;
-     height: 15%;
-     border-radius: 20%;
-}
-
-.button-on-hover {
-    background-color: cornsilk;
-    width: 75%;
+     border-radius: 10%;
 }
 
 body img {
