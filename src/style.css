@@ -7,8 +7,7 @@ body {
 }
 button{
      font-size: large;
-     background-color: cornsilk;
-     border: 10px;
+     color: cornsilk;
      cursor: pointer;
 }
 
