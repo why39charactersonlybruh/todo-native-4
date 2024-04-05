@@ -9,6 +9,7 @@ button{
      font-size: large;
      background-color: #fff;
      cursor: pointer;
+     width: 10%;
 }
 
 body img {
