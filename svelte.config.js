@@ -1,5 +1,4 @@
-svelte.config.js
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 
 export default {
 	kit: {
